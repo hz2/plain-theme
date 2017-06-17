@@ -1,0 +1,23 @@
+<%- partial('_partial/head') %>
+<body>
+<svg class="svg-symbol" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs>
+<symbol id="i-tag" viewBox="0 0 32 32"><circle cx="24" cy="8" r="2" /><path d="M2 18 L18 2 30 2 30 14 14 30 Z" /></symbol><symbol id="i-msg" viewBox="0 0 32 32" ><path d="M2 4 L30 4 30 22 16 22 8 29 8 22 2 22 Z" /></symbol><symbol id="i-calendar" viewBox="0 0 32 32"><path d="M2 6 L2 30 30 30 30 6 Z M2 15 L30 15 M7 3 L7 9 M13 3 L13 9 M19 3 L19 9 M25 3 L25 9" /></symbol><symbol id="i-folder-open" viewBox="0 0 32 32"><path d="M4 28 L28 28 30 12 14 12 10 8 2 8 Z M28 12 L28 4 4 4 4 8" /></symbol><symbol id="i-chevron" viewBox="0 0 32 32"><path d="M12 30 L24 16 12 2" /></symbol><symbol id="i-bookmark" viewBox="0 0 32 32"><path d="M6 2 L26 2 26 30 16 20 6 30 Z" /></symbol>
+</defs></svg>
+ <div id="container">
+  <div id="menu" title="<%= __('menu_title') %>">
+    <div class="line-top"></div>
+    <div class="line-middle"></div>
+    <div class="line-bottom"></div>
+  </div>
+  <div id="toggle">
+   <%- partial('_partial/header', null, {cache: !config.relative_link}) %>
+   <%- partial('_partial/sidebar', null, {cache: !config.relative_link}) %>
+   <%- partial('_partial/footer', null, {cache: !config.relative_link}) %>
+  </div>
+  <div id="wrap">
+   <section id="main"><%- body %></section>
+  </div>
+ </div>
+ <%- partial('_partial/after-footer') %>
+</body>
+</html>

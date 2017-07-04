@@ -421,7 +421,7 @@
 .icon.i-yixin,
 .icon.i-up,
 .icon.i-down {
-    background-image: url(sprite.svg);
+    background-image: url(svg/sprite.svg);
     background-size: cover;
     display: inline-block;
     height: 25px;

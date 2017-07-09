@@ -60,6 +60,13 @@
     -o-transform: rotate(270deg);
 }
 
+.mysvg {
+    border: #eee 1px solid;
+    padding: 20px;
+    margin: 5px;
+    width: 60%;
+}
+
 
 /** hx.ui 2017 05 24  **/
 
@@ -377,7 +384,7 @@ a:hover {
 .article-entry figure.highlight,
 .article-entry>pre {
     font-size: .9em;
-    background: #666;
+    background: #ccc;
     color: #ddd;
     margin: 5px 0;
     border-radius: 2px;
@@ -409,6 +416,10 @@ a:hover {
     color: #999
 }
 
+.article-entry pre .comment {
+    color: #999
+}
+
 .article-entry .highlight .gutter pre {
     padding: 0 .5em;
     color: #999;
@@ -425,7 +436,8 @@ a:hover {
 }
 
 .article-entry a {
-    color: #aaa
+    color: #aaa;
+    word-break: break-all;
 }
 
 .article-entry p code,
@@ -705,6 +717,7 @@ a:hover {
     display: inline-block;
     line-height: 2.2em;
     padding: 0 .7em;
+    margin-bottom: .25em;
     background-color: #222;
 }
 
@@ -1120,5 +1133,8 @@ a:hover {
         background: #eee;
         width: 100%;
         margin-top: -25vh;
+    }
+    .mysvg {
+        width: 90%;
     }
 }

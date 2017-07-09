@@ -8,7 +8,10 @@
     <% } %>
 	<div class="article-meta">
     <%- partial('post/date', {class_name: 'article-date', date_format: null}) %>
-    <%- partial('post/category') %>
+    <%- partial('post/category') %>    
+    <% if (!index && theme.post_index){ %>
+        <svg class="svg"><use xlink:href="#i-idx"></use></svg><a href="#" id="p_index"><%= __('page_index') %></a>
+    <% } %>
 	</div>
     <div class="article-entry" itemprop="articleBody">
       <% if (post.excerpt && index){ %>
@@ -24,8 +27,8 @@
     </div>
     <footer class="article-footer">
      <!-- <svg class="svg"><use xlink:href="#i-tag"></use></svg><a data-url="<%- post.permalink %>" data-id="<%= post._id %>" class="article-share-link"><%= __('share') %></a> -->
-      <% if (post.comments && theme.product_key){ %>
-        <svg class="svg"><use xlink:href="#i-msg"></use></svg><a href="<%- post.permalink %>#cloud-tie-wrapper" class="article-comment-link"><%= __('comment') %></a>
+      <% if (!index && post.comments && theme.disqus){ %>
+        <svg class="svg"><use xlink:href="#i-msg"></use></svg><a href="<%- post.permalink %>#disqus_thread" class="article-comment-link"><%= __('comment') %></a>
       <% } else if (!index && post.comments && theme.cy_appid && theme.cy_conf ){ %>
         <svg class="svg"><use xlink:href="#i-msg"></use></svg><a href="<%- post.permalink %>#SOHUCS" class="article-comment-link"><%= __('comment') %></a>
       <% } %>
@@ -37,28 +40,31 @@
   <% } %>
 </article>
 
-<% if (!index && post.comments && theme.product_key){ %>
+<% if (!index && post.comments && theme.disqus){ %>
 <section id="comments">
-  <div id="cloud-tie-wrapper" class="cloud-tie-wrapper"></div>
+  <div id="disqus_thread"></div>
   <script>
-  var cloudTieConfig = {
-  url: '<%= page.permalink %>',
-  sourceId: '<%= post.layout %>-<%= post.slug %>',
-  productKey:   '<%= theme.product_key %>',
-  target: "cloud-tie-wrapper"
-  };
-</script>
-<%- js('js/cloudtie.min.js') %>
+    var disqus_config = function () {
+      this.page.url = '<%= page.permalink %>';
+      this.page.identifier = '<%= post.layout %>-<%= post.slug %>';
+    };
+    (function() {
+      var d = document, s = d.createElement('script');
+      s.src = 'https://<%= theme.disqus %>.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  </script>
 </section>
 <% } else if (!index && post.comments && theme.cy_appid && theme.cy_conf ){ %>
 <section id="comments">
   <div id="SOHUCS" sid="<%= post.layout %>-<%= post.slug %>" ></div>
   <script charset="utf-8" type="text/javascript" src="https://changyan.sohu.com/upload/changyan.js" ></script>
   <script type="text/javascript">
-	window.changyan.api.config({
+    window.changyan.api.config({
 		appid: '<%= theme.cy_appid %>',
 		conf: '<%= theme.cy_conf %>'
-	});
-</script>
+  	});
+  </script>
 </section>
 <% } %>

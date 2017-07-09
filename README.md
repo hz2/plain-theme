@@ -28,12 +28,9 @@ cd themes/bw
 git pull
 ```
 
-## 配置网易云跟帖 和 搜狐畅言
-示例：
+### 配置搜狐畅言
+分别填写 appid 和 conf
 ```
-# 配置网易云跟帖 这里填写 productKey 
-product_key: xxxxxxxxxxxxxxxxxxxxxxxxxx
-# 配置搜狐畅言 分别填写 appid 和 conf
 cy_appid: cyxxxxx
 cy_conf: prod_xxxxxxxxxxxxxxxxxxxxxxxxxx
 ```

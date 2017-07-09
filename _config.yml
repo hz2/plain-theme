@@ -1,7 +1,10 @@
 # Header
 menu:
-  主页: /
   归档: /archives
+  微博: http://weibo.com
+  贴吧: http://tieba.baidu.com
+  推特: http://twitter.com
+  github: http://github.com
 rss: /atom.xml
 
 # Content
@@ -27,9 +30,11 @@ index_widgets:
 archive_type: 'monthly'
 show_count: ture
 
-# For CN Users
-# 配置网易云跟帖 这里填写 productKey 
-product_key: 
+# display index within the page 显示页内索引
+post_index: true
+
+# disqus shortname
+disqus: h2x
 # 配置搜狐畅言 分别填写 appid 和 conf
 cy_appid: 
 cy_conf: 

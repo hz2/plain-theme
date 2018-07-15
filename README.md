@@ -19,21 +19,21 @@ $ git clone https://github.com/hz2/plain-theme.git themes/plain
 
 ### 启用
 
-在 `_config.yml` 修改 `theme`  为 `bw`.
+在 `_config.yml` 修改 `theme`  为 `plain`.
 
 ### 更新
 
 ``` bash
-cd themes/bw
+cd themes/plain
 git pull
 ```
-<del>
-### 配置搜狐畅言
-分别填写 appid 和 conf
+
+### <del>配置搜狐畅言</del>
+<del>分别填写 appid 和 conf</del>
 ```
-cy_appid: cyxxxxx
-cy_conf: prod_xxxxxxxxxxxxxxxxxxxxxxxxxx
+<del>cy_appid: cyxxxxx</del>
+<del>cy_conf: prod_xxxxxxxxxxxxxxxxxxxxxxxxxx</del>
 ```
-</del>
+
 ## 其他：
 - 内联SVG 图标 来自 [bytesize-icons](https://github.com/danklammer/bytesize-icons)

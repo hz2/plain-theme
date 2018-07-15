@@ -9,12 +9,12 @@
 - 整合 湖心字库，查看 Demo
 - 移动端优化（TODO）
 
-效果预览：[https://hcw.github.io/blog/](https://hcw.github.io/blog/)
+效果预览：[https://hz2.github.io/blog/](https://hz2.github.io/blog/)
 
 ## 安装
 
 ``` bash
-$ git clone https://github.com/hcw/bw-theme-hexo.git themes/bw
+$ git clone https://github.com/hz2/plain-theme.git themes/plain
 ```
 
 ### 启用
@@ -27,13 +27,13 @@ $ git clone https://github.com/hcw/bw-theme-hexo.git themes/bw
 cd themes/bw
 git pull
 ```
-
+<del>
 ### 配置搜狐畅言
 分别填写 appid 和 conf
 ```
 cy_appid: cyxxxxx
 cy_conf: prod_xxxxxxxxxxxxxxxxxxxxxxxxxx
 ```
-
+</del>
 ## 其他：
 - 内联SVG 图标 来自 [bytesize-icons](https://github.com/danklammer/bytesize-icons)

@@ -28,7 +28,8 @@
   <nav id="page-nav">
     <%- paginator({
       prev_text: "<svg class=\"svg left\"><use xlink:href=\"#i-chevron\"></use></svg>" + __('prev'),
-      next_text: __('next') + "<svg class=\"svg\"><use xlink:href=\"#i-chevron\"></use></svg>"
+      next_text: __('next') + "<svg class=\"svg\"><use xlink:href=\"#i-chevron\"></use></svg>",
+      escape: false
     }) %>
   </nav>
 <% } %>

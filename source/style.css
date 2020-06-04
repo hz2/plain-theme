@@ -212,6 +212,7 @@ a:hover {
 
 ::-webkit-scrollbar{
   width: 12px;
+  height: 12px;
 }
 ::-webkit-scrollbar-track{
   box-shadow: inset 0 0 2px #0002;
@@ -578,14 +579,18 @@ a:hover {
 }
 
 .article-entry blockquote {
-    border-left: 4px #ccc solid;
-    outline: 1px #f0f0f0 solid;
-    margin: 10px 5px;
-    padding: 10px;
+  /* border-left: 4px #ccc solid; */
+  outline: 1px #ddd dashed;
+  padding: 10px 15px;
+  background: #f9fcfc;
+}
+.article-entry blockquote p{
+  text-indent: 2em;
 }
 
 .article-entry blockquote footer {
     margin: 10px 0 0;
+    text-align: right;
     font-style: italic;
 }
 
@@ -605,6 +610,11 @@ a:hover {
 
 .article-entry p {
     margin: 5px 0;
+    text-align: justify;
+    line-height: 1.65;
+    transform: scaleY(1.02);
+    letter-spacing: .5px;
+    text-shadow: 1px 1px 5px #0001;
 }
 
 

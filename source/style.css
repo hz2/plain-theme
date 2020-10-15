@@ -490,6 +490,8 @@ a:hover {
 .article-entry a {
     color: #aaa;
     word-break: break-all;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .article-entry p code,

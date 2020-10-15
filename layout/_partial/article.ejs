@@ -9,9 +9,9 @@
 	<div class="article-meta">
     <%- partial('post/date', {class_name: 'article-date', date_format: null}) %>
     <%- partial('post/category') %>    
-    <% if (!index && theme.post_index){ %>
+    <!-- <% if (!index && theme.post_index){ %>
         <svg class="svg"><use xlink:href="#i-idx"></use></svg><a href="#" id="p_index"><%= __('page_index') %></a>
-    <% } %>
+    <% } %> -->
 	</div>
     <div class="article-entry" itemprop="articleBody">
       <% if (post.excerpt && index){ %>

@@ -489,7 +489,7 @@ a:hover {
 
 .article-entry a {
     color: #aaa;
-    word-break: break-all;
+    word-break: break-word;
     margin-left: 4px;
     margin-right: 4px;
 }

@@ -555,24 +555,27 @@ a:hover {
 
 .article-entry>table {
     width: 100%;
-    border: 1px solid #ccc;
+    border: 1px solid #eaeaea;
     border-collapse: collapse;
     margin: 20px 5px;
 }
 
 .article-entry>table thead {
-    background: #eee;
-    border: 1px solid #ccc;
+    background: #f3f3f3;
+    border: 1px solid #eaeaea;
     line-height: 2.5em;
 }
 
 .article-entry>table th,
 .article-entry>table td,
 .article-entry>table tr {
-    border: 1px solid #ccc;
+    border: 1px solid #eaeaea;
     padding: .3em .5em;
-    text-align: center
+    text-align: center;
+    border-left: 1px #eaeaea dashed;
+    border-right: 1px #eaeaea dashed;
 }
+
 
 .article-entry .video-container,
 .article-entry iframe {

@@ -199,57 +199,7 @@ ul {
     padding-left: 40px;
 }
 
-@keyframes transUnderLine {
-    0% {
-      border-bottom: 1px dashed #aaa;
-      transform: translateY(6px) scaleX(1);
-  
-    }
-    40% {
-      border-bottom: 1px dashed #aaa;
-      transform: translateY(6px) scaleX(0);
-    }
-    50% {
-      border-bottom: 1px solid #aaa;
-      transform: translateY(6px) scaleX(0);
-    }
-    100% {
-      border-bottom: 1px solid #aaa;
-      transform: translateY(6px) scaleX(0);
-      
-    }
-      
-  }
 
-a {
-    color: #aaa;
-    text-decoration: none;
-    display: inline-block;
-    line-height:0;
-    padding: 6px 0;
-}
-
-a::after {
-    content: '';
-    display: inline-block;
-    height: 0;
-    width: 100%;
-    background: transparent;
-    border-bottom: 1px dashed #aaa;
-    transform: translateY(6px) scaleX(1);
-    transition: fade-in-;
-}
-
-a:hover {
-    color: #777;
-}
-
-
-a:hover::after {
-    border-bottom: 1px solid #aaa;
-    transform: translateY(6px) scaleX(1);
-    animation: transUnderLine linear 450ms;
-}
 
 
 ::-webkit-scrollbar{
@@ -537,14 +487,59 @@ a:hover::after {
     list-style: 1.8;
 }
 
+@keyframes transUnderLine {
+    0% {
+      border-bottom: 1px dashed #aaa;
+      transform: translateY(6px) scaleX(1);
+  
+    }
+    40% {
+      border-bottom: 1px dashed #aaa;
+      transform: translateY(6px) scaleX(0);
+    }
+    50% {
+      border-bottom: 1px solid #aaa;
+      transform: translateY(6px) scaleX(0);
+    }
+    100% {
+      border-bottom: 1px solid #aaa;
+      transform: translateY(6px) scaleX(0);
+      
+    }
+      
+  }
+
 .article-entry a {
-    /* color: #aaa; */
     word-break: break-word;
     margin-left: 4px;
     margin-right: 4px;
     display: inline-block;
     line-height: 0;
+    color: #aaa;
+    text-decoration: none;
+    padding: 6px 0;
 }
+
+.article-entry a::after {
+    content: '';
+    display: inline-block;
+    height: 0;
+    width: 100%;
+    background: transparent;
+    border-bottom: 1px dashed #aaa;
+    transform: translateY(6px) scaleX(1);
+}
+
+.article-entry a:hover {
+    color: #777;
+}
+
+.article-entry a:hover::after {
+    border-bottom: 1px solid #aaa;
+    transform: translateY(6px) scaleX(1);
+    animation: transUnderLine linear 450ms;
+}
+
 
 .article-entry p code,
 .article-entry td code {

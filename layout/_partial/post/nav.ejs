@@ -12,11 +12,17 @@
       </div>
     </a>
   <% } %>
+  <% if (!post.prev){ %>
+    <span></span>
+  <% } %>
   <% if (post.next){ %>
     <a href="<%- url_for(post.next.path) %>" id="article-nav-older" class="article-nav-link-wrap">
       <svg class="svg up"><use xlink:href="#i-chevron"></use></svg><strong class="article-nav-caption"><%= __('older') %></strong>
       <div class="article-nav-title"><%= post.next.title %></div>
     </a>
+  <% } %>
+  <% if (!post.next){ %>
+    <span></span>
   <% } %>
 </nav>
 <% } %>

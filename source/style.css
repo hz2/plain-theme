@@ -238,7 +238,8 @@ a:hover {
 }
 
 #main .article {
-    border-bottom: #eee 1px solid;
+    border-bottom: #ccc 1px dotted;
+    padding-bottom: 15px;
 }
 
 #main .article header a {
@@ -275,10 +276,13 @@ a:hover {
     overflow: hidden;
 }
 
-#article-nav,
-#article-nav a * {
-    display: inline-block;
-    vertical-align: middle;
+#article-nav {
+    display: flex;
+    justify-content: space-between;
+}
+#article-nav a  {
+    display: flex;
+    align-items: center;
 }
 
 #article-nav .article-nav-title {
@@ -286,15 +290,6 @@ a:hover {
     width: calc( 100% - 100px);
     text-overflow: ellipsis;
     overflow: hidden;
-}
-
-#article-nav #article-nav-newer {
-    float: left;
-}
-
-#article-nav #article-nav-older {
-    float: right;
-    right: 0;
 }
 
 #article-nav .article-nav-caption:after {
@@ -466,12 +461,14 @@ a:hover {
     background:#dedede;
     color: #888;
     padding: 2px 10px;
-    border-bottom: 1px solid #bbb;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .article-entry figure.highlight figcaption a {
     color: #444;
-    float: right
 }
 
 .article-entry .highlight .gutter pre {
@@ -858,6 +855,7 @@ a:hover {
     list-style-type: none;
     color: #777;
     line-height: 1.5em;
+    position: relative;
 }
 
 #sidebar li a,
@@ -869,13 +867,14 @@ a:hover {
 #sidebar li a {
     background: #111;
     padding: 2px 5px 2px 0;
+    position: relative;
+    z-index: 5;
 }
 
 #sidebar li a+span {
-    float: right;
-    vertical-align: middle;
-    margin-right: 40px;
-    clear: both;
+    position: absolute;
+    right: 20px;
+    top: 18px;
     font-size: 13px;
     line-height: 20px;
 }

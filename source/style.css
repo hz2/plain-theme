@@ -281,7 +281,7 @@ a:hover {
     justify-content: space-between;
 }
 #article-nav a  {
-    display: flex;
+    display: inline-flex;
     align-items: center;
 }
 

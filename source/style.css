@@ -280,7 +280,7 @@ a:hover {
     display: flex;
     justify-content: space-between;
 }
-#article-nav a  {
+#article-nav .article-nav-link-wrap {
     display: inline-flex;
     align-items: center;
 }
@@ -474,7 +474,7 @@ a:hover {
 .article-entry .highlight .gutter pre {
     padding: 0 .5em;
     color: #aaa;
-    border-right: 1px solid #bbb;
+    border-right: 1px solid #d0d0d0;
     margin-right: .2em;
     user-select: none;
     -moz-user-select: none;
@@ -491,23 +491,23 @@ a:hover {
     0% {
       border-bottom: 1px dashed #aaa;
       transform-origin: left;
-      transform: translateY(6px) scaleX(1);
+      transform: scaleX(1);
   
     }
     74% {
       border-bottom: 1px dashed #aaa;
       transform-origin: left;
-      transform: translateY(6px) scaleX(0);
+      transform: scaleX(0);
     }
     75% {
       border-bottom: 1px solid #aaa;
       transform-origin: right;
-      transform: translateY(6px) scaleX(0);
+      transform: scaleX(0);
     }
     100% {
       border-bottom: 1px solid #aaa;
       transform-origin: right;
-      transform: translateY(6px) scaleX(1);
+      transform: scaleX(1);
       
     }
       
@@ -517,21 +517,23 @@ a:hover {
     word-break: break-word;
     margin-left: 4px;
     margin-right: 4px;
-    display: inline-block;
-    line-height: 0;
+    line-height: 2;
     color: #aaa;
     text-decoration: none;
     padding: 6px 0;
+    position: relative;
 }
 
 .article-entry a::after {
     content: '';
-    display: inline-block;
+    position: absolute;
     height: 0;
     width: 100%;
+    right: 0;
+    bottom: 0;
     background: transparent;
     border-bottom: 1px dashed #aaa;
-    transform: translateY(6px) scaleX(1);
+    transform: scaleX(1);
 }
 
 .article-entry a:hover {
@@ -540,7 +542,7 @@ a:hover {
 }
 
 .article-entry a:hover::after {
-    animation: transUnderLine linear 420ms forwards ;
+    animation: transUnderLine linear 360ms forwards ;
 }
 
 
@@ -606,27 +608,29 @@ a:hover {
 
 .article-entry>table {
     width: 100%;
-    border: 1px solid #eaeaea;
     border-collapse: collapse;
     margin: 20px 5px;
+    border-radius: 6px 6px 0 0;
+    overflow: hidden;
 }
 
 .article-entry>table thead {
     background: #f3f3f3;
-    border: 1px solid #eaeaea;
+    border: 1px solid #f3f3f3;
     line-height: 2.5em;
 }
 
 .article-entry>table th,
 .article-entry>table td,
 .article-entry>table tr {
-    border: 1px solid #eaeaea;
-    padding: .5em;
+    padding: .7em;
     text-align: center;
-    border-left: 1px #eaeaea dashed;
-    border-right: 1px #eaeaea dashed;
 }
 
+.article-entry>table td,
+.article-entry>table tr {
+    border: 1px dashed #efefef;
+}
 
 .article-entry .video-container,
 .article-entry iframe {

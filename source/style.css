@@ -515,13 +515,12 @@ a:hover {
 
 .article-entry a {
     word-break: break-word;
-    margin-left: 4px;
-    margin-right: 4px;
-    line-height: 2;
+    margin: 4px;
     color: #aaa;
     text-decoration: none;
     padding: 6px 0;
     position: relative;
+    letter-spacing: initial;
 }
 
 .article-entry a::after {

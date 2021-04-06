@@ -43,3 +43,8 @@ twitter:
 google_plus:
 fb_admins:
 fb_app_id:
+
+highlight:
+  enable: false
+prismjs:
+  enable: false

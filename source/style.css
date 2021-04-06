@@ -152,7 +152,8 @@ pre,
 code,
 pre div,
 pre span {
-    font-family: Consolas, Monaco, monospace;
+    /* font-family: Consolas, Monaco, monospace; */
+    font-family: 'Cascadia Code',Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace
 }
 
 body {

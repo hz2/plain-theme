@@ -402,25 +402,25 @@ a:hover {
 .article-entry figure.highlight,
 .article-entry>pre {
     font-size: .9em;
-    background: #dedede;
+    /* background: #dedede;
     color: #5d5d5d;
     margin: 5px 0;
     border-radius: 2px;
     border-collapse: collapse;
-    overflow: auto;
+    overflow: auto; */
 }
 
-.article-entry>pre {
+/* .article-entry>pre {
   padding: 5px;
-}
-.article-entry pre .line {
+} */
+/* .article-entry pre .line {
   margin: 3px 1px;
-}
+} */
 .article-entry pre .comment {
-  color: #fefefe;
+  /* color: #fefefe; */
   font-style: italic;
 }
-.article-entry pre .literal ,
+/* .article-entry pre .literal ,
 .article-entry pre .number {
   color: #197ec7
 }
@@ -453,7 +453,7 @@ a:hover {
 }
 .article-entry pre .selector-tag {
   color: #5d470c;
-}
+} */
 
 
 
@@ -471,7 +471,7 @@ a:hover {
     color: #444;
 }
 
-.article-entry .highlight .gutter pre {
+/* .article-entry .highlight .gutter pre {
     padding: 0 .5em;
     color: #aaa;
     border-right: 1px solid #d0d0d0;
@@ -485,7 +485,7 @@ a:hover {
 .article-entry .highlight .code {
     padding: 0 .3em;
     list-style: 1.8;
-}
+} */
 
 @keyframes transUnderLine {
     0% {

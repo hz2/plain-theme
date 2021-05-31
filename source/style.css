@@ -516,10 +516,10 @@ a:hover {
 
 .article-entry a {
     word-break: break-word;
-    margin: 4px;
+    margin: 4px 4px 6px;
     color: #aaa;
     text-decoration: none;
-    padding: 6px 0;
+    padding: 6px 0 3px;
     position: relative;
     letter-spacing: initial;
 }

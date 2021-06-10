@@ -677,6 +677,10 @@ a:hover {
     text-shadow: 1px 1px 5px #0001;
 }
 
+.article-entry>p {
+    margin: 1.2em 0;
+    text-indent: 2em;
+}
 
 /** 菜单 **/
 

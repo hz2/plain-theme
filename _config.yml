@@ -1,8 +1,8 @@
 # Header
 menu:
   归档: /archives
-  微博: http://weibo.com
-#  贴吧: http://tieba.baidu.com
+  # 微博: http://weibo.com
+  # 贴吧: http://tieba.baidu.com
   推特: http://twitter.com
   github: http://github.com
 # rss: /atom.xml
